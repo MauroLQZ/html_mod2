@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Interno</title>
+    <style>
+        h1#principal {
+         text-align:center;
+		 background-color: #3c805e;
+		 color: white;
+     }
+     .basico {
+         background-color: aqua;
+	     color: #3c805e;
+		 font-weight: bold; /*Negrito*/
+	 }
+	 .intermediario {
+        background-color: rgb(249, 183, 249);
+	     color: #80793c;
+	 }
+	 .avancado {
+        background-color: rgb(161, 227, 229);
+	     color: #803c3c;
+	 }
+  /*Exemplo da class destaque: */
+     .destaque {
+	     background-color:#c5c56070;
+         color: red;
+	 }
+    </style>
+</head>
+<body>
+    <h1 id="principal">Usando a id principal</h1>
+        <h1 class="destaque">Agora a CLASS DESTAQUE</h1>
+    
+    <h2 class="destaque" class="avancado">Selecionando duas class: DESTAQUE/AVANCADO</h2>
+         <h2 class="basico">Agora a class BASICO</h2>
+        <p><span class="basico">Usando o SPAN em P-BAsico</span></p>  
+         <h2 class="intermediario">AGORA A CLASS INTERMEDIARIO</h2>
+         <h2 class="avancado">Usando a class AVANCADO</h2>
+</body>
+</html>

@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+@import url(<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">);
+
+/*kaushan script*/
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+		 
+/*Work Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+/*Raiz da arvore do nosso documento vai servir p/o documento / Area p/declarar as variaveis globais CSS */
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    
+    --fonte-padrao:Arial,Verdana,Helvetica,sans-serif;
+    --fonte-destaque:'Bebas Neue', Arial;
+    --fonte-workSans:'work sans', Arial;
+
+}
+
+/*Todos os elementos*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+header > h1 {
+    color: white;
+    font-family: var(--fonte-workSans);
+    font-size:  3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.269);
+}
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+   /* margin-bottom: 5px; */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+nav > a {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 300px;
+    max-width: 1000px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 1px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.429);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+div > p {
+    text-align: justify;
+    text-indent: 30px;
+}
+#titulo1 {
+    font-family: var(--fonte-workSans), Arial, Helvetica, sans-serif;
+    text-indent: 10px ;
+}
+#titulo2 {
+    font-family: var(--fonte-destaque), Arial, Helvetica, sans-serif;
+    background-color: rgb(117, 246, 229);
+    text-indent: 10px ;
+}
+
+.cabecalho {
+    background-image: linear-gradient(to bottom, #65E670, #71BB78, #37703C);
+    color: white;
+    text-align: center;
+    padding: 1px; 
+}
+nav#menu {
+    text-decoration: none;
+    color: white;
+    text-align: left;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    padding: 10px;
+} 
+/*
+nav > a:visited {
+    color: darkred;
+} 
+nav a:hover {
+    text-decoration: underline;
+    color: blue;
+} */
+/*Pseudo-classes Visitado q/fica vermelho mais escuro */
+a:visited {
+    color: darkred;
+ }
+ /*Passar o mouse em cima*/
+ a:hover {
+     color: black;
+     text-decoration: underline;
+ }
+ /*Quando clicado(ativo)*/
+ a:active {
+     color: yellow;
+ }
+.introducao {
+    background-color: white;
+}
+.historia {
+    background-color: blueviolet;
+}
+.aprender {
+    background-color: rgb(93, 93, 246);
+}
+.rodape {
+    background-color: coral;
+}
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-workSans);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+main h2 {
+    font-family: var(--fonte-workSans);
+    color: var(--cor4);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+}
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+main img {
+    width: 100%;
+}
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.283);
+}
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+
+}
