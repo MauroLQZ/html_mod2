@@ -59,6 +59,9 @@ section {
 	font-family:var(--fonte3);
 	font-size: 3.5vw;
 }
+section > p {
+	padding-bottom: 2em;
+}
 section.nomal {
 	background-color: white;
 	color: black;
