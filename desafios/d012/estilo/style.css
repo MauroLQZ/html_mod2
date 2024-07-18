@@ -79,7 +79,7 @@ section.imagem > p {
 	padding: 5px;
 	/*Texto da imagem se destaca*/
 	background-color:rgba(0, 0, 0, 0.514);
-	text-shadow: :1px 1px 0px black;
+	text-shadow: 1px 1px 0px black;
 }
 section#img01 {
 	background-image: url('../imagens/background001.jpg');
