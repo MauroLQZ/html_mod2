@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+	<style>
+	    * {
+		  font-size: 22px;
+		}
+	    body{		    
+		   font-family:Arial,Helvetica,sans-serif;		
+		}
+		table, tr {
+		   border:1px solid;
+		   border-collapse: collapse;
+		   margin-left: 25%;
+		   margin-top: 5%;
+		}
+		input {
+		   padding: 8px;
+		   font-size: 22px;
+		}
+		.botao {
+			cursor:pointer;
+		}
+		.botao:hover {
+		    background-color: rgb(37, 233, 20);
+		}
+	</style>
+</head>
+</head>
+<body>
+	<h1>Cadastro de Clientes</h1>
+	<form action="">
+	<table>     	
+	  <tr>
+	     <td colspan="4"><h1>CADASTRO DE CLIENTE</h1></td>
+	  <tr>
+	    <td>Nome:</td> <td colspan="4"><input type="text" name="nome" size="50"> </td>
+	  </tr>
+	  <tr>
+	    <td>CPF:</td> <td><input type="text" name="cpf"> </td>
+	  </tr>
+	  <tr>
+	    <td>Data Nasc:</td> <td><input type="date" name="data"> </td>
+	  </tr>
+	  <tr>
+	    <td><input class="botao" type="submit" value="Enviar"></td><td><input class="botao" type="reset" value="Limpar"></td>
+	  </tr>
+	  
+	</table>
+	</form>
+</body>
+</html>
