@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexile Box</title>
+    <title>Flexible Box</title>
     <style>
         div.conteiner {
             background-color: lightsalmon;
+            height: 300px;
             display: flex;
-            flex-direction: row;
+			
+/*flex-flow:row nowrap;
+  justify-content:flex-start;
+  flex-flow:row-reverse nowap*/
+  
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: stretch;
+           /* align-items:flex-start/flex-end/center*/
         }
+
         div.item {
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-            padding: 10px;
+/*flex:auto;*/
         }
     </style>
 </head>
@@ -27,7 +37,6 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
-
     </div>
 </body>
 </html>
