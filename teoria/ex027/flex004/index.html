@@ -10,15 +10,15 @@
             height: 300px;
             display: flex;
 			
-/*flex-flow:row nowrap;
-  justify-content:flex-start;
-  flex-flow:row-reverse nowap*/
-  
-            flex-flow: row wrap;
-            justify-content: center;
+            flex-flow: row nowrap;
+        /* Alinhamento eixo principal: 
+        flex-start/flex-end/center         
+        Alinhamento de espaçamento:
+        space-between/space-evenly/space-around*/
+            justify-content: space-around;
+        /*Alinhamento do eixo transversal(cross-axis)
+        align-items:flex-start/flex-end/center/stretch*/
             align-items: stretch;
-           /* align-items:flex-start/flex-end/center*/
-        }
 
         div.item {
             background-color: lightskyblue;
